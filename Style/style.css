@@ -4,30 +4,100 @@
     font-family: 'Poppins', sans-serif;
 }
 
-table {
-    width: 100%;
+.site-nav {
+    margin: auto;
+    padding-bottom: 1vw;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-thead, tbody {
-    font-size: 80px;
+.site-nav li {
+    list-style: none;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+    background-color: #bda058;
+    font-size: 2vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 33.33%;
+    box-align: center;
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    float: left;
+    font-weight: bold;
+
+}
+
+.site-nav li:hover {
+    background-color: #6e5d31;
+}
+
+
+html {
+    background-color: rgb(22, 22, 22);
+}
+
+body {
+    margin: 0;
+}
+
+table {
+    flex: 3;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 60%;
+    border-collapse: collapse;
 }
 
 thead {
-    font-size: 125px;
+    font-size: 4vw;
+    background-color: #bda058;
 }
 
-th > img {
-    width: 150px;
-    height: 150px;
-}
-
-td > img {
-    width: 125px;
-    height: 125px;
-}
 
 th, tr, td {
     text-align: center;
 }
 
+tbody > tr > th {
+    background-color: #d1b05e;
+}
 
+tbody > tr > td{
+    color: white;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #212121;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #303030;
+}
+
+th[colspan="2"] {
+    width: 80%;
+}
+
+.logo > img {
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}
+
+.logo, .record {
+    width: 20%;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.team-name {
+    width: 60%;
+    font-size: 4vw;
+    text-align: center;
+}
