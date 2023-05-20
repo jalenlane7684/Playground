@@ -1,0 +1,31 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    width: 100%;
+}
+
+thead, tbody {
+    font-size: 80px;
+}
+
+thead {
+    font-size: 125px;
+}
+
+th > img {
+    width: 150px;
+    height: 150px;
+}
+
+td > img {
+    width: 125px;
+    height: 125px;
+}
+
+th, tr, td {
+    text-align: center;
+}
+
+
