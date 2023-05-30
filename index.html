@@ -8,71 +8,122 @@
         <title>Victoris Esports</title>
     </head>
     <nav class="site-nav">
-        <ul>
-            <a href="">VAD Standings</a>
-            <a href="">VRD Standings</a>
-            <a href="">VAS Standings</a>
-            <a href="">VRS Standings</a>
-            <a href="">VTS Standings</a>
+        <ul class="site-nav-list">
+            <a class="site-nav-item" href="">VAD Standings</a>
+            <a class="site-nav-item" href="">VRD Standings</a>
+            <a class="site-nav-item" href="">VAS Standings</a>
+            <a class="site-nav-item" href="">VRS Standings</a>
+            <a class="site-nav-item" href="">VTS Standings</a>
         </ul>
     </nav>
     <body>
-        <table class="vad-table">
-            <thead>
-                <th class="logo">
-                    <img src="../Images/VAD LOL.png" width="40" height="40" alt="">
-                </th>
-                <th colspan="2">VAD Standings</th>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <th class="logo">Logo</th>
-                    <th class="team-name">Team</th>
-                    <th class="record">Record</th>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Falcons.PNG" width="50" height="50" alt=""></td>
-                    <td class="team-name">Falcons</td>
-                    <td class="record">17-4</td>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Hounds.png" width="50" height="50" alt=""></td>
-                    <td class="team-name">Hounds</td>
-                    <td class="record">17-4</td>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Nocturnals.png" width="50" height="50" alt=""></td>
-                    <td class="team-name">Nocturnals</td>
-                    <td class="record">11-10</td>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Grizzlies.png" width="50" height="50" alt=""></td>
-                    <td class="team-name">Grizzlies</td>
-                    <td class="record">11-10</td>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Astronauts.png" width="50" height="50" alt=""></td>
-                    <td class="team-name">Astronauts</td>
-                    <td class="record">10-11</td>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Crusaders.png" width="50" height="50" alt=""></td>
-                    <td class="team-name">Crusaders</td>
-                    <td class="record">7-14</td>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Unicorns.png" width="50" height="50" alt=""></td>
-                    <td class="team-name">Unicorns</td>
-                    <td class="record">6-15</td>
-                </tr>
-                <tr>
-                    <td class="logo"><img src="../Images/Wolves.png" width="50" height="50" alt=""></td>
-                    <td class="team-name">Wolves</td>
-                    <td class="record">5-16</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="body-content">
+            <!-- <table class="vad-table">
+                <thead>
+                    <th class="logo vad-header">
+                        <img class="vad-logo" src="../Images/VAD LOL.png" alt="">
+                    </th>
+                    <th colspan="2" class="vad-header">VAD Standings</th>
+                    <tr>
+                        <th class="logo vad-header">Logo</th>
+                        <th class="team-name vad-header">Team</th>
+                        <th class="record vad-header">Record</th>
+                    </tr>
+                </thead>
+                
+                <tbody class="teams">
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Falcons.PNG" class="team-logo" alt=""></td>
+                        <td class="team-name">Falcons</td>
+                        <td class="record">17-4</td>
+                    </tr>
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Hounds.png" class="team-logo" alt=""></td>
+                        <td class="team-name">Hounds</td>
+                        <td class="record">17-4</td>
+                    </tr>
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Nocturnals.png" class="team-logo" alt=""></td>
+                        <td class="team-name">Nocturnals</td>
+                        <td class="record">11-10</td>
+                    </tr>
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Grizzlies.png" class="team-logo" alt=""></td>
+                        <td class="team-name">Grizzlies</td>
+                        <td class="record">11-10</td>
+                    </tr>
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Astronauts.png" class="team-logo" alt=""></td>
+                        <td class="team-name">Astronauts</td>
+                        <td class="record">10-11</td>
+                    </tr>
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Crusaders.png" class="team-logo" alt=""></td>
+                        <td class="team-name">Crusaders</td>
+                        <td class="record">7-14</td>
+                    </tr>
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Unicorns.png" class="team-logo" alt=""></td>
+                        <td class="team-name">Unicorns</td>
+                        <td class="record">6-15</td>
+                    </tr>
+                    <tr class="team-row">
+                        <td class="logo"><img src="../Images/Wolves.png" class="team-logo" alt=""></td>
+                        <td class="team-name">Wolves</td>
+                        <td class="record">5-16</td>
+                    </tr>
+                </tbody>
+            </table> -->
+
+            <div class="vad-standings">
+                <div class="standings-header">
+                    <img class="vad-logo" src="../Images/VAD LOL.png" alt="">
+                    <span class="vad-header">VAD Standings</span>
+                </div>
+                <div class="teams">
+                    <div class="team-row">
+                        <img src="../Images/Falcons.PNG" class="team-logo" alt="">
+                        <span class="team-name">Falcons</span>
+                        <span class="record">17 - 4</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="../Images/Hounds.PNG" class="team-logo" alt="">
+                        <span class="team-name">Hounds</span>
+                        <span class="record">17 - 4</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="../Images/Nocturnals.PNG" class="team-logo" alt="">
+                        <span class="team-name">Nocturnals</span>
+                        <span class="record">11 - 10</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="../Images/Grizzlies.PNG" class="team-logo" alt="">
+                        <span class="team-name">Grizzlies</span>
+                        <span class="record">11 - 10</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="../Images/Astronauts.PNG" class="team-logo" alt="">
+                        <span class="team-name">Astronauts</span>
+                        <span class="record">10 - 11</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="../Images/Crusaders.PNG" class="team-logo" alt="">
+                        <span class="team-name">Crusaders</span>
+                        <span class="record">7 - 14</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="../Images/Unicorns.PNG" class="team-logo" alt="">
+                        <span class="team-name">Unicorns</span>
+                        <span class="record">6 - 15</span>
+                    </div>
+                    <div class="team-row">
+                        <img src="../Images/Wolves.PNG" class="team-logo" alt="">
+                        <span class="team-name">Wolves</span>
+                        <span class="record">5 - 16</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </body>
 </html>
