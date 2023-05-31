@@ -41,6 +41,7 @@ body {
 .site-nav-item {
     background-color: #d1b05e;
     color: black;
+    border: none;
     border-radius: 25px 25px;
     font-size: .3rem;
     flex: auto;
