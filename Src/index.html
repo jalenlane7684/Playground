@@ -4,28 +4,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../CSS/style.css">
-        <link rel="stylesheet" href="../SCSS/main.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="SCSS/main.css">
         <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <title>Victoris Esports</title>
     </head>
     <nav class="site-nav bg-secondary">
         <div class="site-nav-list">
-            <img src="../Images/Logo+ Font.png" class="victoris-logo" alt="">
-            <button class="site-nav-item home">About Us</button>
-            <button class="site-nav-item vad">Register</button>
-            <button class="site-nav-item vrd">Rules</button>
-            <button class="site-nav-item vas">Schedule</button>
-            <button class="site-nav-item vrs">Standings</button>
-            <button class="site-nav-item vts">Contact Us</button>
+            <img src="Images/Logo+ Font.png" class="victoris-logo" alt="">
+            <button class="site-nav-item reg">Register</button>
+            <button class="site-nav-item rules">Rules</button>
+            <button class="site-nav-item sche">Schedule</button>
+            <button class="site-nav-item stand">Standings</button>
+            <button class="site-nav-item stats">Stats</button>
+            <button class="site-nav-item contact">Contact Us</button>
         </div>
-        <div class="site-nav-list-collapse bg-primary collapse">
-            <button class="site-nav-item bg-secondary text-primary home">About Us</button>
-            <button class="site-nav-item bg-secondary text-primary vad">Register</button>
-            <button class="site-nav-item bg-secondary text-primary vrd">Rules</button>
-            <button class="site-nav-item bg-secondary text-primary vas">Schedule</button>
-            <button class="site-nav-item bg-secondary text-primary vrs">Standings</button>
-            <button class="site-nav-item bg-secondary text-primary vts">Contact Us</button>
+        <div class="site-nav-list second-nav bg-primary hidden">
+            <button class="site-nav-item text-primary home">VAD Standings</button>
+            <button class="site-nav-item text-primary vad">VRD Standings</button>
+            <button class="site-nav-item text-primary vrd">VAS Standings</button>
+            <button class="site-nav-item text-primary vas">VRS Standings</button>
+            <button class="site-nav-item text-primary vrs">VTS Standings</button>
         </div>
     </nav>
     <body>
@@ -33,53 +32,125 @@
 
             <div class="standings-template">
                 <div class="standings-header">
-                    <img class="vad-logo" src="../Images/VAD LOL.png" alt="">
+                    <img class="vad-logo" src="Images/VAD LOL.png" alt="">
                     <span class="vad-header">VAD Standings</span>
                 </div>
                 <div class="teams">
-                    <button class="team-row">
-                        <img src="../Images/Falcons.PNG" class="team-logo" alt="">
+                    <button class="team-row" id="falcons-btn">
+                        <img src="Images/Falcons.PNG" class="team-logo" alt="">
                         <span class="team-name">Falcons</span>
-                        <span class="record">17 - 4</span>
+                        <span class="record" id="falcons-record">17 - 4</span>
                     </button>
+                    <div class="team-schedule falcons container hidden" id="falcons-matches">  
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">L</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Grizzlies.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">W</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Nocturnals.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Astronauts.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Hounds.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Crusaders.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Wolves.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Unicorns.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Grizzlies.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Nocturnals.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                        <div class="row game-row falcons">
+                            <div class="text-secondary col-2">W</div>
+                            <img src="Images/Falcons.PNG" class="team-logo col-3" srcset="">
+                            <div class="text-secondary col-2">VS</div>
+                            <img src="Images/Astronauts.png" class="team-logo col-3" alt="">
+                            <div class="text-secondary col-2">L</div>
+                        </div>
+                    </div>
                     <button class="team-row">
-                        <img src="../Images/Hounds.png" class="team-logo" alt="">
+                        <img src="Images/Hounds.png" class="team-logo" alt="">
                         <span class="team-name">Hounds</span>
                         <span class="record">17 - 4</span>
                     </button>
                     <button class="team-row">
-                        <img src="../Images/Nocturnals.png" class="team-logo" alt="">
+                        <img src="Images/Nocturnals.png" class="team-logo" alt="">
                         <span class="team-name">Nocturnals</span>
                         <span class="record">11 - 10</span>
                     </button>
                     <button class="team-row">
-                        <img src="../Images/Grizzlies.png" class="team-logo" alt="">
+                        <img src="Images/Grizzlies.png" class="team-logo" alt="">
                         <span class="team-name">Grizzlies</span>
                         <span class="record">11 - 10</span>
                     </button>
                     <button class="team-row">
-                        <img src="../Images/Astronauts.png" class="team-logo" alt="">
+                        <img src="Images/Astronauts.png" class="team-logo" alt="">
                         <span class="team-name">Astronauts</span>
                         <span class="record">10 - 11</span>
                     </button>
                     <button class="team-row">
-                        <img src="../Images/Crusaders.png" class="team-logo" alt="">
+                        <img src="Images/Crusaders.png" class="team-logo" alt="">
                         <span class="team-name">Crusaders</span>
                         <span class="record">7 - 14</span>
                     </button>
                     <button class="team-row">
-                        <img src="../Images/Unicorns.png" class="team-logo" alt="">
+                        <img src="Images/Unicorns.png" class="team-logo" alt="">
                         <span class="team-name">Unicorns</span>
                         <span class="record">6 - 15</span>
                     </button>
                     <button class="team-row">
-                        <img src="../Images/Wolves.png" class="team-logo" alt="">
+                        <img src="Images/Wolves.png" class="team-logo" alt="">
                         <span class="team-name">Wolves</span>
                         <span class="record">5 - 16</span>
                     </button>
                 </div>
             </div>
         </div>
-        
+        <script src="js/main.js"></script>
     </body>
 </html>
